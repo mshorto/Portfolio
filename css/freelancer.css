@@ -9,7 +9,7 @@ body {
 }
 
 p {
-    font-size: 20px;
+    font-size: 18px;
 }
 
 p.small {
@@ -17,7 +17,9 @@ p.small {
 }
 
 a,
-a:hover,
+a:hover {
+    color: #c96d6d;
+}
 a:focus,
 a:active,
 a.active {
@@ -32,7 +34,6 @@ h4,
 h5,
 h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-weight: 700;
 }
 
 hr.star-light,
@@ -84,6 +85,9 @@ hr.star-primary:after {
 .navbar-nav>li>a {
     padding-top: 0px;
     padding-bottom: 0px;
+}
+.navbar-nav>li>a:hover {
+    color: ;
 }
 
 header {
@@ -180,7 +184,7 @@ background-color: #13467f;
 }
 
 .navbar {
-    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif; 
+    font-family: "Montserrat","Helvetica Neue",Helvetica,Arial,sans-serif; 
 }
 
 .navbar a:focus {
@@ -199,6 +203,9 @@ background-color: #13467f;
 .navbar-inverse {
     border: 0;
 }
+#workbtn a {
+    margin-top: 50px;
+}
 
 section {
     padding: 75px 0 75px 0;
@@ -209,7 +216,39 @@ section h2 {
     margin: 0;
     font-size: 3em;
 }
+#social{
+    text-align: center;
+}
+#social .fa{
+    margin-top: 3px;
+    font-size: 34px;
+}
+#social .fa-fw {
+width: 28px
+}
 
+#about p {
+    letter-spacing: 1px;
+    margin-top: 22px;
+    font-size: 20px;
+}
+#about .btn-outline {
+    color: #964B4B;
+    margin-top: 0px;
+}
+#about .btn-social {
+    border: 4px solid #964B4B;
+    border-radius: 0%; 
+    width: 46px;
+    height: 46px;
+}
+#about a {
+    color: #FFC4C4;
+}
+#about a:hover{
+    text-decoration: none;
+    color: #964B4B;
+}
 section.success {
     color: #fff;
     background: #c96d6d;
@@ -220,6 +259,84 @@ section.success h2 {
     font-size: 3em;
 }
 
+progress, progress[role] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border: none;
+    background-size: auto;
+    width: 100%;
+}
+
+.skill-list {
+  list-style: none;
+  margin: 0;
+  padding: 1em;
+}
+.skill {
+  margin-bottom: 10px;
+  position: relative;
+}
+.skill h4 {
+    color: #964B4B;
+    font-size: 1.25em;
+    font-family: "Montserrat", arial, sans-serif;
+    left: 1em;
+    line-height: 1;
+    top: 1em;
+  }
+
+  ::-webkit-progress-value { 
+    -webkit-animation: bar-fill 2s;
+    width: 0px;
+  }
+
+progress[value]::-webkit-progress-bar {
+  background-color: #B35E5E;
+}
+.skill-1::-webkit-progress-value {
+  background: #964B4B;
+}
+
+.skill-1::-moz-progress-bar {
+  background: #B35E5E;
+}
+
+.skill-2::-webkit-progress-value {
+  background: #964B4B;
+}
+
+.skill-2::-moz-progress-bar {
+  background: #B35E5E;
+}
+
+.skill-3::-webkit-progress-value {
+  background: #964B4B;
+}
+
+.skill-3::-moz-progress-bar {
+  background: #B35E5E;
+}
+.skill-4::-webkit-progress-value {
+  background: #964B4B;
+}
+
+.skill-4::-moz-progress-bar {
+  background: #B35E5E;
+}
+.skill-5::-webkit-progress-value {
+  background: #964B4B;
+}
+.skill-5::-moz-progress-bar {
+  background: #B35E5E;
+}
+@-webkit-keyframes bar-fill {
+  0% { width: 0; }
+}
+
+@keyframes bar-fill {
+  0% { width: 0; }
+}
 #contact h2{
     color: #13467f;
     margin: 0;
@@ -239,19 +356,19 @@ section.success h2 {
 #ExtraContact img {
     display: inline;
     width: 15%;
-    margin-top: 150px;
+    margin-top: 100px;
     margin-bottom: 20px;
 }
 #mail img {
     display: inline;
     width: 21%;
-    margin-top: 176px;
+    margin-top: 126px;
     margin-bottom: 20px;
 }
 #phone img {
     display: inline;
     width: 17%;
-    margin-top: 155px;
+    margin-top: 105px;
     margin-bottom: 20px;
 }
 @media(max-width:767px) {
@@ -288,7 +405,7 @@ section.success h2 {
 }
 
 #about img {
-    width: 80%;
+    width: 100%;
 }
 
 #portfolio h3 {
@@ -460,8 +577,8 @@ form .row:first-child .floating-label-form-group {
 }
 footer p {
     margin-bottom: 2px;
-margin-top: 10px;
-font-size: 12px;
+    margin-top: 10px;
+    font-size: 12px;
 }
 footer {
     color: #fff;
@@ -489,7 +606,7 @@ footer ul, ol {
     margin-bottom: -9.5px;
 }
 footer .btn-outline {
-margin-top: 0px;
+    margin-top: 0px;
 }
 
 .btn-social {
@@ -502,6 +619,10 @@ margin-top: 0px;
     font-size: 20px;
     line-height: 30px;
 }
+.footer-below .btn-outline:hover{
+    color: #13467f;
+}
+
 
 .btn:focus,
 .btn:active,
@@ -529,6 +650,17 @@ margin-top: 0px;
 .scroll-top .btn:focus {
     outline: 0;
 }
+.portfolio-modal p {
+    font-size: 18px;
+    color: #919191;
+}
+.portfolio-modal h2 {
+    margin-bottom: 50px;
+    color: #919191;
+}
+.portfolio-modal .list-inline>li {
+margin-bottom: 50px;
+}
 
 .portfolio-modal .modal-content {
     padding: 100px 0;
@@ -542,7 +674,6 @@ margin-top: 0px;
 }
 
 .portfolio-modal .modal-content h2 {
-    margin: 0;
     font-size: 3em;
 }
 
